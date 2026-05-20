@@ -1,3 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
+    padding:50px;
+    text-align:center;
+}
+
+nav{
+    background:#111827;
+    padding:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+.hero{
+    height:500px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-texto h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-texto p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.boton{
+    background:#2563eb;
+    padding:15px 30px;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+.contenido{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.tarjetas,
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card,
+.card-grande{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
 
 .card:hover{
     transform:translateY(-10px);
@@ -35,70 +134,3 @@ footer{
     padding:30px;
     margin-top:40px;
 }
-```
-```css
-.contenedor-formulario {
-    width: 90%;
-    margin: 40px auto;
-}
-
-.card-ticket {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-form input,
-form select,
-form textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-form button {
-    background: #0077cc;
-    color: white;
-    border: none;
-    padding: 14px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-.tabla-tickets {
-    width: 90%;
-    margin: 40px auto;
-}
-
-.tabla-tickets table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-}
-
-.tabla-tickets th,
-.tabla-tickets td {
-    padding: 15px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-.tabla-tickets th {
-    background: #003366;
-    color: white;
-}
-
-.estado {
-    background: #28a745;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-}
-

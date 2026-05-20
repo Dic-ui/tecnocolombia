@@ -1,0 +1,50 @@
+```html
+            <select id="categoria" required>
+                <option value="">Seleccione categoría</option>
+                <option>CRM</option>
+                <option>Correo Corporativo</option>
+                <option>Conectividad</option>
+                <option>Hardware</option>
+                <option>Contraseñas</option>
+            </select>
+
+            <select id="prioridad" required>
+                <option value="">Seleccione prioridad</option>
+                <option>Crítica</option>
+                <option>Alta</option>
+                <option>Media</option>
+                <option>Baja</option>
+            </select>
+
+            <textarea id="descripcion" rows="5" placeholder="Descripción del incidente" required></textarea>
+
+            <button type="submit">Crear Ticket</button>
+        </form>
+    </div>
+</section>
+
+<section class="tabla-tickets">
+    <h2>Tickets Registrados</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Usuario</th>
+                <th>Categoría</th>
+                <th>Prioridad</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody id="listaTickets"></tbody>
+    </table>
+</section>
+
+<footer>
+    <p>© 2026 TecnoColombia S.A.S - Mesa de Servicios TI</p>
+</footer>
+
+<script src="js/tickets.js"></script>
+</body>
+</html>
+```

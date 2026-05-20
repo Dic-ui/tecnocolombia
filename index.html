@@ -1,169 +1,35 @@
-export default function MesaServiciosTI() {
-  const sections = [
-    {
-      title: "Pantalla Principal",
-      description:
-        "Interfaz principal de la Mesa de Servicios donde se centraliza la gestión de incidentes, solicitudes y requerimientos tecnológicos.",
-      image: "https://placehold.co/900x450?text=Pantalla+Principal+Mesa+de+Servicios",
-    },
-    {
-      title: "Registro de Tickets",
-      description:
-        "Formulario para registrar incidentes relacionados con CRM, correo corporativo, conectividad, equipos y contraseñas.",
-      image: "https://placehold.co/900x450?text=Registro+de+Tickets",
-    },
-    {
-      title: "Clasificación y Priorización",
-      description:
-        "Clasificación de incidentes según impacto y urgencia: crítico, alto, medio y bajo.",
-      image: "https://placehold.co/900x450?text=Clasificacion+de+Incidentes",
-    },
-    {
-      title: "Asignación por Niveles",
-      description:
-        "Distribución automática de tickets hacia soporte Nivel 1, Nivel 2 y Nivel 3.",
-      image: "https://placehold.co/900x450?text=Asignacion+de+Soporte",
-    },
-    {
-      title: "Catálogo de Servicios",
-      description:
-        "Visualización de servicios TI como CRM, correo corporativo, red, soporte técnico y gestión de accesos.",
-      image: "https://placehold.co/900x450?text=Catalogo+de+Servicios",
-    },
-    {
-      title: "Base de Conocimiento",
-      description:
-        "Repositorio de soluciones frecuentes, procedimientos técnicos y guías de soporte.",
-      image: "https://placehold.co/900x450?text=Base+de+Conocimiento",
-    },
-    {
-      title: "Reportes y Métricas",
-      description:
-        "Indicadores de desempeño para medir cumplimiento de SLA, incidentes abiertos y tickets resueltos.",
-      image: "https://placehold.co/900x450?text=Reportes+y+Metricas",
-    },
-    {
-      title: "Gestión de Usuarios y Roles",
-      description:
-        "Administración de perfiles como administrador, analista, técnico y usuario final.",
-      image: "https://placehold.co/900x450?text=Usuarios+y+Roles",
-    },
-  ];
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Servicios TI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
 
-  return (
-    <div className="min-h-screen bg-slate-100 text-slate-800 p-6">
-      <div className="max-w-7xl mx-auto">
-        <header className="bg-white rounded-3xl shadow-lg p-10 mb-10 border border-slate-200">
-          <h1 className="text-4xl font-bold mb-4 text-center">
-            Diseño del Centro de Servicios – Mesa de Soporte
-          </h1>
-
-          <h2 className="text-2xl font-semibold text-center mb-6">
-            TecnoColombia S.A.S.
-          </h2>
-
-          <p className="text-lg leading-relaxed text-justify">
-            El presente diseño web representa la propuesta de implementación de una Mesa de Servicios TI basada en las buenas prácticas de ITIL 4 para la empresa TecnoColombia S.A.S. La plataforma permite centralizar la gestión de incidentes, solicitudes, problemas y requerimientos tecnológicos mediante una estructura organizada de soporte escalonado, gestión de SLA y seguimiento continuo de los servicios tecnológicos.
-          </p>
-        </header>
-
-        <section className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white rounded-3xl shadow-md p-8 border border-slate-200">
-            <h3 className="text-2xl font-bold mb-4">Objetivos del Centro de Servicios</h3>
-            <ul className="list-disc pl-6 space-y-3 text-base leading-relaxed">
-              <li>Centralizar la gestión de incidentes y solicitudes TI.</li>
-              <li>Reducir tiempos de respuesta y solución.</li>
-              <li>Garantizar cumplimiento de los SLA.</li>
-              <li>Mejorar la experiencia de los usuarios.</li>
-              <li>Fortalecer la continuidad de los servicios tecnológicos.</li>
-            </ul>
-          </div>
-
-          <div className="bg-white rounded-3xl shadow-md p-8 border border-slate-200">
-            <h3 className="text-2xl font-bold mb-4">Herramientas y Tecnologías</h3>
-            <ul className="list-disc pl-6 space-y-3 text-base leading-relaxed">
-              <li>ITIL 4 como marco de referencia.</li>
-              <li>Software ITSM de código abierto.</li>
-              <li>Gestión de tickets automatizada.</li>
-              <li>Base de conocimiento integrada.</li>
-              <li>Monitoreo y reportes en tiempo real.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Diseño Funcional de la Mesa de Servicios
-          </h2>
-
-          <div className="grid gap-8">
-            {sections.map((item, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-200"
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-72 object-cover"
-                />
-
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">
-                    {index + 1}. {item.title}
-                  </h3>
-
-                  <p className="text-lg leading-relaxed text-justify">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="bg-white rounded-3xl shadow-lg p-10 border border-slate-200 mb-10">
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Beneficios de la Implementación
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6 text-lg">
-            <div className="bg-slate-100 rounded-2xl p-6">
-              ✔ Centralización de la atención TI
-            </div>
-
-            <div className="bg-slate-100 rounded-2xl p-6">
-              ✔ Gestión eficiente de incidentes y solicitudes
-            </div>
-
-            <div className="bg-slate-100 rounded-2xl p-6">
-              ✔ Cumplimiento de acuerdos SLA
-            </div>
-
-            <div className="bg-slate-100 rounded-2xl p-6">
-              ✔ Mejora continua de los servicios tecnológicos
-            </div>
-
-            <div className="bg-slate-100 rounded-2xl p-6">
-              ✔ Seguimiento y trazabilidad de tickets
-            </div>
-
-            <div className="bg-slate-100 rounded-2xl p-6">
-              ✔ Incremento en la satisfacción de usuarios
-            </div>
-          </div>
-        </section>
-
-        <footer className="text-center text-slate-600 py-6">
-          <p className="text-base">
-            Universidad Nacional Abierta y a Distancia – UNAD
-          </p>
-
-          <p className="text-base">
-            Curso Gestión de TI – Fase 5 Plan de mejora continua del servicio TI
-          </p>
-        </footer>
-      </div>
+<header>
+    <div class="contenedor">
+        <h1>TecnoColombia S.A.S.</h1>
+        <p>Mesa de Servicios basada en ITIL 4</p>
     </div>
-  );
-}
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="sla.html">SLA</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="conocimiento.html">Conocimiento</a></li>
+        <li><a href="disponibilidad.html">Disponibilidad</a></li>
+        <li><a href="seguridad.html">Seguridad</a></li>
+        <li><a href="continuidad.html">Continuidad</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-texto">
+        <h2>Centro de Servicios TI</h2>
+```

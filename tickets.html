@@ -1,4 +1,38 @@
-```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tickets | TecnoColombia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">TecnoColombia S.A.S</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sla.html">SLA</a></li>
+            <li><a href="seguridad.html">Seguridad</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero-small">
+    <h1>Sistema de Gestión de Tickets</h1>
+    <p>Registro y seguimiento de incidentes TI.</p>
+</section>
+
+<section class="contenedor-formulario">
+    <div class="card-ticket">
+        <h2>Registrar Ticket</h2>
+
+        <form id="ticketForm">
+            <input type="text" id="usuario" placeholder="Nombre del usuario" required>
+            <input type="email" id="correo" placeholder="Correo electrónico" required>
+
             <select id="categoria" required>
                 <option value="">Seleccione categoría</option>
                 <option>CRM</option>
@@ -47,4 +81,3 @@
 <script src="js/tickets.js"></script>
 </body>
 </html>
-```

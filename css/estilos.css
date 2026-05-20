@@ -38,3 +38,70 @@ footer{
     margin-top:40px;
 }
 ```
+```css
+.contenedor-formulario {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.card-ticket {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tabla-tickets {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.tabla-tickets table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.tabla-tickets th,
+.tabla-tickets td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabla-tickets th {
+    background: #003366;
+    color: white;
+}
+
+.estado {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+```
+
